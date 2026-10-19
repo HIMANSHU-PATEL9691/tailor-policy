@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy & App Operations - Tailor Master</title>
+  <meta name="description" content="Official Privacy Policy, Data Safety disclosure, and operational workflow guide for Tailor Master (com.himanshupatel.tailorpro) on Google Play Store.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #007AFF;
+      --primary-dark: #0056b3;
+      --primary-light: #e8f2ff;
+      --success: #34C759;
+      --success-light: #eafaf1;
+      --warning: #FF9500;
+      --warning-light: #fff8ed;
+      --danger: #FF3B30;
+      --danger-light: #ffeded;
+      --dark: #0f172a;
+      --dark-card: #1e293b;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --radius: 12px;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05);
+      --shadow-lg: 0 10px 25px -5px rgba(0,0,0,0.08), 0 8px 10px -6px rgba(0,0,0,0.04);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      padding: 24px 16px;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, #090d16 0%, #1e293b 100%);
+      color: #ffffff;
+      padding: 48px 36px;
+      text-align: center;
+      position: relative;
+    }
+
+    .header-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(0, 122, 255, 0.2);
+      border: 1px solid rgba(0, 122, 255, 0.4);
+      color: #60a5fa;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.825rem;
+      font-weight: 600;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .header h1 {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+
+    .header p.lead {
+      color: #94a3b8;
+      font-size: 1.05rem;
+      max-width: 680px;
+      margin: 0 auto 16px;
+    }
+
+    .header-meta {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      padding-top: 14px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .header-meta span strong {
+      color: #ffffff;
+    }
+
+    /* Navigation Quick Links */
+    .toc-bar {
+      background: #f1f5f9;
+      padding: 16px 28px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .toc-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      letter-spacing: 0.5px;
+    }
+
+    .toc-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .toc-link {
+      font-size: 0.825rem;
+      color: var(--primary);
+      text-decoration: none;
+      padding: 4px 10px;
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      font-weight: 500;
+      transition: all 0.2s;
+    }
+
+    .toc-link:hover {
+      background: var(--primary);
+      color: #ffffff;
+      border-color: var(--primary);
+    }
+
+    /* Content Area */
+    .content {
+      padding: 40px 36px;
+    }
+
+    .section {
+      margin-bottom: 44px;
+      scroll-margin-top: 24px;
+    }
+
+    .section:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-badge {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+
+    .section h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .section p {
+      margin-bottom: 14px;
+      color: #334155;
+      font-size: 0.975rem;
+    }
+
+    /* Workflow Cards */
+    .workflow-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin: 20px 0;
+    }
+
+    .workflow-card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--primary);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 20px 24px;
+      box-shadow: var(--shadow-sm);
+      transition: box-shadow 0.2s;
+    }
+
+    .workflow-card:hover {
+      box-shadow: var(--shadow-md);
+    }
+
+    .workflow-card h3 {
+      font-size: 1.125rem;
+      color: var(--dark);
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .workflow-card .step-num {
+      background: var(--primary);
+      color: #fff;
+      font-size: 0.75rem;
+      font-weight: 800;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .workflow-card ul, .workflow-card ol {
+      margin-left: 20px;
+      margin-top: 10px;
+    }
+
+    .workflow-card li {
+      margin-bottom: 6px;
+      color: #475569;
+      font-size: 0.925rem;
+    }
+
+    .pipeline-flow {
+      background: var(--primary-light);
+      border: 1px dashed var(--primary);
+      border-radius: 8px;
+      padding: 14px 18px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      color: var(--primary-dark);
+      font-weight: 600;
+      text-align: center;
+      margin: 14px 0;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+
+    /* Data Safety Table */
+    .table-responsive {
+      overflow-x: auto;
+      margin: 20px 0;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-sm);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.925rem;
+      text-align: left;
+    }
+
+    th {
+      background: #f8fafc;
+      color: var(--dark);
+      font-weight: 600;
+      padding: 12px 16px;
+      border-bottom: 2px solid var(--border);
+      white-space: nowrap;
+    }
+
+    td {
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border);
+      color: #334155;
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    tr:hover td {
+      background: #f8fafc;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .tag-blue { background: #dbeafe; color: #1e40af; }
+    .tag-green { background: #dcfce7; color: #15803d; }
+    .tag-orange { background: #ffedd5; color: #9a3412; }
+    .tag-red { background: #fee2e2; color: #991b1b; }
+
+    /* Highlight Callouts */
+    .callout {
+      padding: 20px;
+      border-radius: var(--radius);
+      margin: 20px 0;
+      border-left: 4px solid;
+    }
+
+    .callout-info {
+      background: var(--primary-light);
+      border-color: var(--primary);
+      color: #1e3a8a;
+    }
+
+    .callout-success {
+      background: var(--success-light);
+      border-color: var(--success);
+      color: #065f46;
+    }
+
+    .callout-danger {
+      background: var(--danger-light);
+      border-color: var(--danger);
+      color: #991b1b;
+    }
+
+    .callout h4 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .callout p {
+      font-size: 0.925rem;
+      margin-bottom: 6px;
+      color: inherit;
+    }
+
+    /* Deletion Instructions Card */
+    .deletion-box {
+      background: #fff;
+      border: 2px solid #fecaca;
+      border-radius: var(--radius);
+      padding: 24px;
+      margin: 20px 0;
+    }
+
+    .deletion-box h3 {
+      color: var(--danger);
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .deletion-steps {
+      margin-left: 20px;
+      margin-bottom: 16px;
+    }
+
+    .deletion-steps li {
+      margin-bottom: 10px;
+      color: #334155;
+    }
+
+    .code-pill {
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      color: #0f172a;
+      border: 1px solid #cbd5e1;
+    }
+
+    /* Contact Card */
+    .contact-card {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .contact-item h5 {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+
+    .contact-item p {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--dark);
+      margin: 0;
+    }
+
+    .contact-item a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    .footer {
+      background: #0f172a;
+      color: #94a3b8;
+      padding: 28px 36px;
+      text-align: center;
+      font-size: 0.875rem;
+      border-top: 1px solid var(--border);
+    }
+
+    .footer p {
+      margin-bottom: 6px;
+    }
+
+    .footer a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    @media (max-width: 640px) {
+      body { padding: 12px 8px; }
+      .header { padding: 32px 20px; }
+      .header h1 { font-size: 1.65rem; }
+      .content { padding: 24px 18px; }
+      .section h2 { font-size: 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    
+    <!-- Header -->
+    <header class="header">
+      <div class="header-badge">Google Play Store Policy & Data Safety Compliant</div>
+      <h1>Tailor Master Privacy Policy</h1>
+      <p class="lead">Complete operational workflow overview and comprehensive data collection, usage, and safety disclosure.</p>
+      
+      <div class="header-meta">
+        <span><strong>App Name:</strong> Tailor Master</span>
+        <span><strong>Package ID:</strong> <code>com.himanshupatel.tailorpro</code></span>
+        <span><strong>Version:</strong> 1.0.0</span>
+        <span><strong>Effective Date:</strong> October 2026</span>
+      </div>
+    </header>
+
+    <!-- Table of Contents Navigation Bar -->
+    <nav class="toc-bar">
+      <span class="toc-label">Jump to:</span>
+      <div class="toc-links">
+        <a class="toc-link" href="#overview">1. App Overview</a>
+        <a class="toc-link" href="#workflows">2. How the App Works</a>
+        <a class="toc-link" href="#data-collection">3. Data Collection</a>
+        <a class="toc-link" href="#data-safety">4. Play Console Data Safety</a>
+        <a class="toc-link" href="#permissions">5. Device Permissions</a>
+        <a class="toc-link" href="#security">6. Data Protection</a>
+        <a class="toc-link" href="#deletion">7. Account & Data Deletion</a>
+        <a class="toc-link" href="#children">8. Children's Privacy</a>
+        <a class="toc-link" href="#contact">9. Developer Contact</a>
+      </div>
+    </nav>
+
+    <!-- Content -->
+    <main class="content">
+
+      <!-- Section 1: Overview -->
+      <section class="section" id="overview">
+        <span class="section-badge">Section 1</span>
+        <h2>1. About Tailor Master & Core Purpose</h2>
+        <p>
+          <strong>Tailor Master</strong> (Package Name: <code>com.himanshupatel.tailorpro</code>) is a professional tailoring business management application built for custom tailoring shops, garment designers, boutique owners, master cutters, and stitchers.
+        </p>
+        <p>
+          The application serves as a dedicated digital workspace to record customer garment fittings and measurements, issue tailoring orders, allocate tasks to specialized workers, monitor order fulfillment stages in real-time, manage material inventory, and calculate payments and due balances.
+        </p>
+        <p>
+          We are committed to maintaining the confidentiality, integrity, and privacy of all data recorded by tailoring shop owners and their customers. This document details precisely what information is collected, why it is needed, how it is secured, and how you can manage or delete your data at any time.
+        </p>
+      </section>
+
+      <!-- Section 2: How the App Works (Workflows) -->
+      <section class="section" id="workflows">
+        <span class="section-badge">Section 2</span>
+        <h2>2. Detailed App Workflows: What the App Does</h2>
+        <p>
+          To provide full transparency for users and Google Play Reviewers, here is the complete operational lifecycle of how Tailor Master operates:
+        </p>
+
+        <div class="workflow-grid">
+          
+          <!-- Step 1 -->
+          <div class="workflow-card">
+            <h3><span class="step-num">1</span> User Registration & Shop Setup</h3>
+            <p>Tailors, shop owners, and garment workers register an account to access the shop's management portal.</p>
+            <ul>
+              <li><strong>Phone Number:</strong> Acts as the primary account identifier for login and account security.</li>
+              <li><strong>Full Name & Business Name:</strong> Identifies the tailoring shop and displays on invoices and worker assignments.</li>
+              <li><strong>Shop Address:</strong> Printed on customer receipts and order invoices.</li>
+              <li><strong>Password:</strong> Hashed and salted using industry-standard bcrypt encryption before storage.</li>
+              <li><strong>Role Assignment:</strong> Users register as either <em>Admin (Shop Owner)</em> or <em>User (Tailor / Worker)</em>.</li>
+            </ul>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="workflow-card">
+            <h3><span class="step-num">2</span> Administrator Verification & Approval Policy</h3>
+            <p>
+              To ensure data protection and prevent unauthorized individuals from viewing confidential customer measurements or shop sales data:
+            </p>
+            <ul>
+              <li>Newly registered user accounts default to a <strong>Pending Approval</strong> state.</li>
+              <li>The Shop Administrator inspects the pending account in the in-app <strong>Admin Panel</strong>.</li>
+              <li>Only after explicit Admin verification and approval can the user view shop orders, customer profiles, or worker tasks.</li>
+              <li>Admins can also assign subscription validity or deactivate worker access if personnel leaves the shop.</li>
+            </ul>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="workflow-card">
+            <h3><span class="step-num">3</span> Secure Role-Based Login & Access</h3>
+            <p>Approved personnel access the system with their Phone Number and Password:</p>
+            <ul>
+              <li><strong>Shop Owners / Admins:</strong> Full access to financial metrics, worker approvals, inventory, pricing, and all customer orders.</li>
+              <li><strong>Tailors & Workers:</strong> Scoped access limited only to orders and measurement sheets assigned to them for cutting, stitching, or finishing.</li>
+            </ul>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="workflow-card">
+            <h3><span class="step-num">4</span> Customer Measurement Management</h3>
+            <p>The app enables shopkeepers to build a permanent fitting record for repeat customers:</p>
+            <ul>
+              <li><strong>Customer Profile:</strong> Full name, contact phone number, address, and gender.</li>
+              <li><strong>Custom Garment Measurements:</strong> Precise body measurements for shirts, suits, trousers, kurtas, jackets, and blouses (e.g., chest, waist, hips, shoulder, sleeve length, collar, neck, inseam, cuff size).</li>
+              <li><strong>Fitting History:</strong> Updating and revisiting previous fitting measurements for future tailoring orders without remeasuring.</li>
+            </ul>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="workflow-card">
+            <h3><span class="step-num">5</span> Order Creation Flow ("Make Order")</h3>
+            <p>When a client places an order, the user records complete order specifications:</p>
+            <ul>
+              <li><strong>Garment & Quantity:</strong> Selected item types (Shirt, Suit, Pant, Kurta, Safari, etc.) and quantities.</li>
+              <li><strong>Design & Customization:</strong> Collar styles, cuff designs, pocket placement, pleats, and button styles.</li>
+              <li><strong>Fabric & Design Photos:</strong> Uploading or capturing cloth pattern photos or customer reference sample pictures using the device camera or gallery.</li>
+              <li><strong>Stitching Notes:</strong> Written or audio instructions detailing special customer tailoring preferences.</li>
+              <li><strong>Billing & Advance Deposit:</strong> Subtotal, discounts, advance deposit amount paid, and calculated pending balance due.</li>
+              <li><strong>Delivery Scheduling:</strong> Promised trial and delivery dates.</li>
+            </ul>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="workflow-card">
+            <h3><span class="step-num">6</span> Worker Task Assignment & Progress Tracking ("Track Work")</h3>
+            <p>Ensures systematic fulfillment of orders and team accountability:</p>
+            <div class="pipeline-flow">
+              Pending ➔ Cutting ➔ Stitching ➔ Finishing ➔ Quality Check ➔ Ready for Delivery ➔ Delivered
+            </div>
+            <ul>
+              <li><strong>Job Splitting:</strong> The shop owner assigns individual items or skills (e.g., Cutting, Stitching) to specific workers.</li>
+              <li><strong>Real-Time Updates:</strong> Workers update status as they complete their assigned phase of the garment.</li>
+              <li><strong>Delivery Readiness:</strong> Notifications and alerts alert shop staff when an order is ready for customer pickup.</li>
+            </ul>
+          </div>
+
+          <!-- Step 7 -->
+          <div class="workflow-card">
+            <h3><span class="step-num">7</span> Material Inventory & Stock Control</h3>
+            <p>The app tracks raw materials required for tailoring:</p>
+            <ul>
+              <li>Fabric rolls (meters), buttons, threads, zippers, lining, canvas, and accessories.</li>
+              <li>Supplier information and restock quantity alerts.</li>
+            </ul>
+          </div>
+
+          <!-- Step 8 -->
+          <div class="workflow-card">
+            <h3><span class="step-num">8</span> Invoicing, Due Payments & Receipts</h3>
+            <p>Transparent accounting for both tailor and customer:</p>
+            <ul>
+              <li><strong>Invoice & Receipt Generation:</strong> Automatically formats order bills with shop branding, customer details, measurements, item list, and balance due.</li>
+              <li><strong>Document Sharing:</strong> Generates printable PDF receipts that can be shared via WhatsApp, SMS, or printer.</li>
+              <li><strong>Due Balance Follow-up:</strong> Filter orders with unpaid balances to streamline receivables collection upon garment pickup.</li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Section 3: Data Collection -->
+      <section class="section" id="data-collection">
+        <span class="section-badge">Section 3</span>
+        <h2>3. Information Collected & How It Is Used</h2>
+        <p>
+          We collect only the minimal data strictly required to provide tailoring management functionality. The data collected falls into the following categories:
+        </p>
+
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Data Fields</th>
+                <th>Collection Purpose</th>
+                <th>Mandatory / Optional</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>User Account Info</strong></td>
+                <td>Phone number, Full name, Shop name, Address, Hashed password, Role</td>
+                <td>User registration, login authentication, role-based authorization, and receipt headers.</td>
+                <td><span class="tag tag-blue">Mandatory</span></td>
+              </tr>
+              <tr>
+                <td><strong>Customer Records</strong></td>
+                <td>Customer full name, Phone number, Address, Gender</td>
+                <td>Creating customer profiles, order linkage, and notifying customers about order completion.</td>
+                <td><span class="tag tag-blue">Mandatory</span></td>
+              </tr>
+              <tr>
+                <td><strong>Measurement Details</strong></td>
+                <td>Chest, Waist, Shoulder, Sleeve, Neck, Inseam, Hip, Collar, custom body measurements</td>
+                <td>Core tailoring service: Ensuring garments are cut and sewn to precise customer dimensions.</td>
+                <td><span class="tag tag-blue">Mandatory</span></td>
+              </tr>
+              <tr>
+                <td><strong>Order & Billing Data</strong></td>
+                <td>Garment types, quantities, rates, subtotal, discount, advance amount, balance due, payment mode (Cash/UPI), delivery dates</td>
+                <td>Generating customer invoices, recording order history, and tracking outstanding accounts receivable.</td>
+                <td><span class="tag tag-blue">Mandatory</span></td>
+              </tr>
+              <tr>
+                <td><strong>Photos & Images</strong></td>
+                <td>Fabric cloth swatches, sample clothing designs, pattern reference images</td>
+                <td>Attaching visual reference photos to orders so workers accurately reproduce customer designs.</td>
+                <td><span class="tag tag-orange">Optional</span></td>
+              </tr>
+              <tr>
+                <td><strong>Worker & Staff Data</strong></td>
+                <td>Worker name, Phone number, Skill specialties (e.g., shirt, coat, pant)</td>
+                <td>Assigning tailoring tasks, tracking shop workload, and calculating piece-rate performance.</td>
+                <td><span class="tag tag-orange">Optional</span></td>
+              </tr>
+              <tr>
+                <td><strong>Inventory Records</strong></td>
+                <td>Material name, Category, Quantity in stock, Unit, Unit price, Supplier</td>
+                <td>Tracking fabric rolls, buttons, threads, and tailoring accessories.</td>
+                <td><span class="tag tag-orange">Optional</span></td>
+              </tr>
+              <tr>
+                <td><strong>Device & Notifications</strong></td>
+                <td>Expo Push Notification Token, OS version, Device type</td>
+                <td>Delivering timely push alerts for delivery deadlines and order updates.</td>
+                <td><span class="tag tag-orange">Optional</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 4: Google Play Data Safety Disclosure -->
+      <section class="section" id="data-safety">
+        <span class="section-badge">Section 4</span>
+        <h2>4. Google Play Console Data Safety Section Declarations</h2>
+        <p>
+          For developers completing the Google Play Console Data Safety questionnaire, here is the exact classification of Tailor Master's data practices:
+        </p>
+
+        <div class="table-responsive">
+          <table>
+            <thead>
+              <tr>
+                <th>Google Play Data Type</th>
+                <th>Collected?</th>
+                <th>Shared with 3rd Parties?</th>
+                <th>Encrypted in Transit?</th>
+                <th>Ephemeral?</th>
+                <th>Primary Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Personal Info: Name</strong></td>
+                <td><span class="tag tag-green">Yes</span></td>
+                <td><span class="tag tag-red">No (Never Shared)</span></td>
+                <td><span class="tag tag-green">Yes (TLS/HTTPS)</span></td>
+                <td>No (Stored)</td>
+                <td>App functionality, Account management</td>
+              </tr>
+              <tr>
+                <td><strong>Personal Info: Phone number</strong></td>
+                <td><span class="tag tag-green">Yes</span></td>
+                <td><span class="tag tag-red">No (Never Shared)</span></td>
+                <td><span class="tag tag-green">Yes (TLS/HTTPS)</span></td>
+                <td>No (Stored)</td>
+                <td>Authentication, Account identifier</td>
+              </tr>
+              <tr>
+                <td><strong>Financial Info: Purchase history & Balances</strong></td>
+                <td><span class="tag tag-green">Yes</span></td>
+                <td><span class="tag tag-red">No (Never Shared)</span></td>
+                <td><span class="tag tag-green">Yes (TLS/HTTPS)</span></td>
+                <td>No (Stored)</td>
+                <td>Order invoicing & accounting</td>
+              </tr>
+              <tr>
+                <td><strong>Photos and Videos</strong></td>
+                <td><span class="tag tag-green">Yes</span></td>
+                <td><span class="tag tag-red">No (Never Shared)</span></td>
+                <td><span class="tag tag-green">Yes (TLS/HTTPS)</span></td>
+                <td>No (Stored)</td>
+                <td>App functionality (Fabric & sample designs)</td>
+              </tr>
+              <tr>
+                <td><strong>Audio files: Voice Notes</strong></td>
+                <td><span class="tag tag-green">Yes (Optional)</span></td>
+                <td><span class="tag tag-red">No (Never Shared)</span></td>
+                <td><span class="tag tag-green">Yes (TLS/HTTPS)</span></td>
+                <td>No (Stored)</td>
+                <td>App functionality (Tailor voice instructions)</td>
+              </tr>
+              <tr>
+                <td><strong>Device or Other IDs</strong></td>
+                <td><span class="tag tag-green">Yes</span></td>
+                <td><span class="tag tag-red">No (Never Shared)</span></td>
+                <td><span class="tag tag-green">Yes (TLS/HTTPS)</span></td>
+                <td>No (Stored)</td>
+                <td>Push Notifications & Alerts</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout-success">
+          <h4>✓ Zero Data Selling Guarantee</h4>
+          <p>Tailor Master <strong>NEVER</strong> sells, rents, monetizes, or transfers any personal data or business records to advertising brokers, marketing agencies, or third-party data aggregators.</p>
+        </div>
+      </section>
+
+      <!-- Section 5: Device Permissions -->
+      <section class="section" id="permissions">
+        <span class="section-badge">Section 5</span>
+        <h2>5. Android Device Permissions & Justifications</h2>
+        <p>The app requests the following runtime permissions strictly to support user-initiated actions:</p>
+        
+        <div class="workflow-grid">
+          <div class="workflow-card">
+            <h3><code>android.permission.CAMERA</code></h3>
+            <p><strong>Reason:</strong> Used when the user chooses to take a live photo of a client's cloth fabric swatch, embroidery sample, or custom garment styling directly inside the Order Creation screen.</p>
+          </div>
+
+          <div class="workflow-card">
+            <h3><code>android.permission.READ_MEDIA_IMAGES</code> / <code>READ_EXTERNAL_STORAGE</code></h3>
+            <p><strong>Reason:</strong> Used when the user selects an existing photo of a garment design or fabric sample from the device photo gallery to attach to an order.</p>
+          </div>
+
+          <div class="workflow-card">
+            <h3><code>android.permission.POST_NOTIFICATIONS</code></h3>
+            <p><strong>Reason:</strong> Used to display local and push notifications alerting the tailor or worker about upcoming order delivery dates, pending approvals, or assignment changes.</p>
+          </div>
+
+          <div class="workflow-card">
+            <h3><code>android.permission.INTERNET</code> & <code>ACCESS_NETWORK_STATE</code></h3>
+            <p><strong>Reason:</strong> Used to transmit encrypted data between the mobile app and the secure MongoDB backend API.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 6: Security & Storage -->
+      <section class="section" id="security">
+        <span class="section-badge">Section 6</span>
+        <h2>6. Data Protection, Storage & Security Measures</h2>
+        <p>We implement comprehensive security practices to safeguard all business and customer information:</p>
+        <ul>
+          <li><strong>Encryption in Transit:</strong> All communication between the mobile client and backend servers is encrypted using modern TLS (Transport Layer Security) over HTTPS.</li>
+          <li><strong>Password Protection:</strong> Passwords are protected using one-way <code>bcrypt</code> cryptographic hashing with random salt rounds. Plaintext passwords are never logged or stored.</li>
+          <li><strong>Role-Based Access Control (RBAC):</strong> JSON Web Tokens (JWT) authenticate every API request. Tailors and workers cannot access admin financial reports or unauthorized shop settings.</li>
+          <li><strong>Cloud Database Security:</strong> Backend databases are hosted on enterprise-grade MongoDB Atlas with network firewalls and restricted IP access.</li>
+          <li><strong>Local Storage:</strong> Authentication tokens and shop session states stored locally on the device use isolated application storage (AsyncStorage) inaccessible to other apps.</li>
+        </ul>
+      </section>
+
+      <!-- Section 7: Account Deletion (Google Play Compliance) -->
+      <section class="section" id="deletion">
+        <span class="section-badge">Section 7</span>
+        <h2>7. Account & Data Deletion Policy (Google Play Compliant)</h2>
+        <p>
+          In accordance with Google Play Developer Policies regarding account and data deletion, users have the permanent right to request the complete deletion of their account and all associated personal and business data.
+        </p>
+
+        <div class="deletion-box">
+          <h3>
+            <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+            </svg>
+            How to Request Account & Data Deletion
+          </h3>
+
+          <p>You can delete your account and all associated records through either of the following methods:</p>
+
+          <ol class="deletion-steps">
+            <li>
+              <strong>Direct In-App Deletion:</strong>
+              <br>Open the <strong>Tailor Master</strong> app &rarr; Navigate to <strong>Settings</strong> &rarr; Scroll to <strong>Actions</strong> &rarr; Tap <span class="code-pill">Clear All Data</span> or <span class="code-pill">Delete Account</span>. Confirm the prompt to immediately remove your session and clear local records.
+            </li>
+            <li>
+              <strong>Direct Email Deletion Request:</strong>
+              <br>Send an email from or referencing your registered phone number to:
+              <br><a href="mailto:support@tailormaster.app?subject=Account%20and%20Data%20Deletion%20Request%20-%20Tailor%20Master"><strong>support@tailormaster.app</strong></a>
+              <br>Include the following details:
+              <ul>
+                <li>Subject Line: <span class="code-pill">Account and Data Deletion Request - Tailor Master</span></li>
+                <li>Your Registered Phone Number</li>
+                <li>Your Registered Shop / Business Name</li>
+              </ul>
+            </li>
+          </ol>
+
+          <div class="callout callout-danger" style="margin-top: 12px; margin-bottom: 0;">
+            <h4>Data Deletion Timeline & Scope</h4>
+            <p>Upon receiving your confirmed deletion request:</p>
+            <ul style="margin-left: 20px; font-size: 0.9rem;">
+              <li>Your user profile, login credentials, customer measurement sheets, order archives, and attached photos will be permanently deleted from our live databases within <strong>7 business days</strong>.</li>
+              <li>Any database backup snapshots containing your data are automatically overwritten within 30 days.</li>
+              <li>This action is irreversible. Once deleted, your fitting histories and order records cannot be recovered.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 8: Children's Privacy -->
+      <section class="section" id="children">
+        <span class="section-badge">Section 8</span>
+        <h2>8. Children's Privacy (COPPA Compliance)</h2>
+        <p>
+          Tailor Master is a business and productivity tool designed exclusively for commercial tailor shops, fashion boutiques, and professional garment workers.
+        </p>
+        <p>
+          The service is not targeted at, nor intentionally designed for, children under the age of 13 (or under 16 in applicable jurisdictions). We do not knowingly collect personal information from children. If you become aware that a child has provided us with personal information, please contact us immediately, and we will take prompt steps to delete such data.
+        </p>
+      </section>
+
+      <!-- Section 9: Third-Party Service Providers -->
+      <section class="section" id="third-party">
+        <span class="section-badge">Section 9</span>
+        <h2>9. Third-Party Service Providers</h2>
+        <p>We work with trusted infrastructure service providers solely to operate the platform:</p>
+        <ul>
+          <li><strong>MongoDB Atlas:</strong> Managed cloud database hosting with industry-standard encryption at rest and in transit.</li>
+          <li><strong>Expo Application Services (EAS):</strong> Push notification delivery service for mobile application builds and alerts.</li>
+        </ul>
+        <p>These service providers are bound by strict contractual confidentiality obligations and are prohibited from using your data for any independent purpose.</p>
+      </section>
+
+      <!-- Section 10: Policy Updates -->
+      <section class="section" id="updates">
+        <span class="section-badge">Section 10</span>
+        <h2>10. Updates to This Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy periodically to reflect enhancements to our tailoring platform or adjustments in legal and Google Play regulatory requirements. The "Effective Date" at the top of this document will always reflect the date of the most recent revision. Continued use of the application after any policy update constitutes acceptance of the revised terms.
+        </p>
+      </section>
+
+      <!-- Section 11: Developer Contact -->
+      <section class="section" id="contact">
+        <span class="section-badge">Section 11</span>
+        <h2>11. Developer Contact Information</h2>
+        <p>
+          For any questions, clarifications, feedback, or data privacy requests concerning Tailor Master, please reach out to our team:
+        </p>
+
+        <div class="contact-card">
+          <div class="contact-item">
+            <h5>Application Name</h5>
+            <p>Tailor Master</p>
+          </div>
+          <div class="contact-item">
+            <h5>Android Package ID</h5>
+            <p><code>com.himanshupatel.tailorpro</code></p>
+          </div>
+          <div class="contact-item">
+            <h5>Developer / Owner</h5>
+            <p>Himanshu Patel</p>
+          </div>
+          <div class="contact-item">
+            <h5>Official Support Email</h5>
+            <p><a href="mailto:support@tailormaster.app">support@tailormaster.app</a></p>
+          </div>
+          <div class="contact-item">
+            <h5>Web Policy URL</h5>
+            <p><a href="https://187-127-150-120.sslip.io/privacy-policy" target="_blank">https://187-127-150-120.sslip.io/privacy-policy</a></p>
+          </div>
+          <div class="contact-item">
+            <h5>Account Deletion URL</h5>
+            <p><a href="https://187-127-150-120.sslip.io/privacy-policy#deletion" target="_blank">https://187-127-150-120.sslip.io/privacy-policy#deletion</a></p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2026 Tailor Master (<code>com.himanshupatel.tailorpro</code>). All rights reserved.</p>
+      <p>Prepared for Google Play Console Compliance, Developer Policy, and User Data Safety Standards.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
